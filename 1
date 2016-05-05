@@ -1,0 +1,26 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    long int T, N, i, j, sum;
+    
+    cin>>T;
+    
+    for(i=0;i<T;i++){
+        sum = 0;
+        cin>>N;
+        for(j=1;j<N;j++){
+            if(j%3==0 || j%5==0) sum += j;
+        }
+        cout<<sum<<endl;
+        
+    }
+    
+    return 0;
+}
